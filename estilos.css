@@ -1,0 +1,39 @@
+/*variables*/
+ /*estamos declarando la variable naranja y además le asigno el valor #ff9600*/
+ /*root aplica a todo el html*/
+:root {
+    --naranja: #ff9600;
+    --negro: #000000;
+    --gris: #333333;
+    --blanco: #ffffff;
+}
+
+*{margin:0;
+padding:0;
+box-sizing: border-box;}
+
+body{
+    background-color: var(--gris);
+    font-family: arial, sans serif;
+    background-image: url(images/pattern.jpg);
+}
+
+.cabecera, .contenedor {max-width:1000px;
+    margin: 0 auto;
+padding-bottom:16px;}
+
+.cabecera {color: var(--naranja);
+display:flex;
+/* separar los elementos en horizontal */
+justify-content: space-between;
+/* centramos en vertical los elementos */
+align-items: center;
+font-size: 16px;
+padding: 16px 0;}
+
+
+
+.contenedor {
+    /* aca aplicamos la variable que armamos arriba */
+    background-color: var(--blanco);
+}
