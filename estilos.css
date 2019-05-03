@@ -37,3 +37,54 @@ padding: 16px 0;}
     /* aca aplicamos la variable que armamos arriba */
     background-color: var(--blanco);
 }
+
+
+.nav { background-color: orange;
+
+    /* separo usando el nav asi me llevo el margen a todas las paginas */
+    margin-bottom: 30px;
+    
+    
+    }
+
+
+.slider {
+    background-color: fuchsia;
+
+    /* a la imagen la centro como si fuera texto, pero siempre se aplica al elemento padre, en este caso .slider */
+    text-align: center;
+}
+
+.nav-lista {
+    list-style: none;
+    background-color: var (--naranja);
+    display:flex;
+    padding: 10px 0;
+    margin-left:20px;
+    text-align: center;
+    
+    
+}
+
+.nav-lista_item{
+    padding:10px;
+    
+    
+}
+
+.nav a {
+   
+    display:block;
+    color:white;
+    border-right: 1px solid white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.nav a:hover {
+    background-color: var(--blanco);
+    text-decoration: underline;
+    color: var(--naranja);
+}
