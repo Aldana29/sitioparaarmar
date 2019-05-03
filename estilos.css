@@ -18,6 +18,12 @@ body{
     background-image: url(images/pattern.jpg);
 }
 
+/**
+---------------------------------------------------------------------------------------------------------
+SECCION CABECERA
+------------------------------------------------------------------------------------------------------------
+*/
+
 .cabecera, .contenedor {max-width:1000px;
     margin: 0 auto;
 padding-bottom:16px;}
@@ -47,13 +53,6 @@ padding: 16px 0;}
     
     }
 
-
-.slider {
-    background-color: fuchsia;
-
-    /* a la imagen la centro como si fuera texto, pero siempre se aplica al elemento padre, en este caso .slider */
-    text-align: center;
-}
 
 .nav-lista {
     list-style: none;
@@ -87,4 +86,64 @@ padding: 16px 0;}
     background-color: var(--blanco);
     text-decoration: underline;
     color: var(--naranja);
+}
+
+/**
+---------------------------------------------------------------------------------------------------------------
+SECCION SLIDER
+-------------------------------------------------------------------------------------------------------------
+*/
+.slider {
+    
+
+    /* a la imagen la centro como si fuera texto, pero siempre se aplica al elemento padre, en este caso .slider */
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+/**
+----------------------------------------------------------------------------------------------------------
+SECCION PRINCIPAL
+------------------------------------------------------------------------------------------------------------
+*/
+.principal {
+   
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap:30px;
+
+}
+
+.categorias {
+    margin-left: 30px;
+}
+
+.cat-title {
+    margin-bottom: 10px;
+}
+
+.cat-list {
+    list-style: none;
+}
+
+.cat-list a{
+    
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: var(--negro);
+}
+
+.cat-list a:hover{
+    background-color: var(--negro);
+    color:white;
+    text-decoration: underline;
+}
+
+.cat-list_item{
+border-bottom: 1px dashed var(--negro);
+}
+
+.productos{
+    background-color: teal;
 }
